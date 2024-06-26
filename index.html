@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TensorFlow.js Image Manipulation</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+<body>
+    <h1>TensorFlow.js - Manipulación de Imágenes</h1>
+    <input type="file" id="imageUpload" accept="image/*">
+
+    <div>
+        <h2>Imagen Original</h2>
+        <img id="originalImage" src="" alt="Original Image">
+    </div>
+
+    <div>
+        <h2>Resized Bilinear Image</h2>
+        <canvas id="resizedImageBilinear"></canvas>
+    </div>
+
+    <div>
+        <h2>Resized Nearest Neighbor Image</h2>
+        <canvas id="resizedImageNearestNeighbor"></canvas>
+    </div>
+
+    <div>
+        <h2>Mirrored Image</h2>
+        <canvas id="mirroredImage"></canvas>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
